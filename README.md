@@ -22,6 +22,10 @@ Enjoy!
 
 I will also mention that my notes are not always an exact representation of what was taught in the class. I sometimes remove what I feel is unnecessary and add what I feel is supplementary or helpful.
 
+###Topics Covered
+
+The focus will be on computer science, math, and engineering-related courses, but I have other interests as well, like music and history.
+
 Below is a list of everything that I have planned / completed. There may be notes and solutions that are present in the repository but are still incomplete, so read this list to see what I feel is "production-ready".
 
 ###Coming Soon
