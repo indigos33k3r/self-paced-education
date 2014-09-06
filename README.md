@@ -20,6 +20,8 @@ Enjoy!
 
 **Note**: Depite this being public and on GitHub, I will not accept any pull requests. This is meant to be a repository of my notes and solutions, not a community-driven effort like Victor Felder's [Free Programming Books](https://github.com/vhf/free-programming-books). I would encourage those who wish to contribute to create and share their own notes and solutions.
 
+I will also mention that my notes are not always an exact representation of what was taught in the class. I sometimes remove what I feel is unnecessary and add what I feel is supplementary or helpful.
+
 Below is a list of everything that I have planned / completed. There may be notes and solutions that are present in the repository but are still incomplete, so read this list to see what I feel is "production-ready".
 
 ###Coming Soon
