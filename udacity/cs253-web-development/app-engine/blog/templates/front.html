@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for post in posts %}
+<article class="post">
+  <header>
+    <h2 class="post-title">{{ post.subject }}</h2>
+    <span class="dateline">{{ post.created.strftime('%A, %B %w, %Y') }}</span>
+  </header>
+  <div class="post-content">{{ post.content | safe }}</div>
+</article>
+{% endfor %}
+
+<hr>
+<footer>Queried {{ seconds }} seconds ago.</footer>
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<header>
+  {% if redirect %}
+    <a href="/signup?redirect={{ redirect }}">signup</a> |
+    <a href="{{ redirect }}">back</a>
+  {% else %}
+    <a href="/signup">signup</a> |
+    <a href="/">back</a>
+  {% endif %}
+</header>
+
+<h1>Log in below!</h1>
+
+<form method="post">
+  <br />
+  <label>
+    Username
+    <input name="username" value="{{ username }}">
+  </label>
+  <br />
+  <label>
+    Password
+    <input type="password" name="password" value="{{ password }}">
+  </label>
+  <br />
+  {% if error %}
+    <span style="color: red">{{ error }}</span>
+  {% endif %}
+  <br />
+  <input type="submit">
+</form>
+
+{% endblock %}

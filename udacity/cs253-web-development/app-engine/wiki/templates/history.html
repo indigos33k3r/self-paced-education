@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% if id %}
+  {% set link_suffix = [topic.path, "?id=", id]|join("") %}
+{% else %}
+  {% set link_suffix = topic.path %}
+{% endif %}
+
+{% block content %}
+
+<header>
+  <a href="{{ link_suffix }}">view</a> |
+  {% if username %}
+    {{ username }}
+    (<a href="/logout?redirect={{ link_suffix }}">logout</a>)
+  {% else %}
+    <a href="/login?redirect={{ link_suffix }}">login</a> |
+    <a href="/signup?redirect={{ link_suffix }}">signup</a>
+  {% endif %}
+</header>
+
+<h1>history{% if topic.wiki_name %}: {{ topic.wiki_name }}{% endif %}</h1>
+
+<table>
+  {% for wiki in wikis %}
+      <td class="date">
+        {{ wiki.created.strftime('%m/%d/%y') }}
+      </td>
+      <td class="time">
+        {{ wiki.created.strftime('%H:%M') }} (UTC)
+      </td>
+      <td class="content">
+        {{ wiki.content | truncate }}
+      </td>
+      <td class="view">
+        <a href="{{ topic.path }}?id={{ wiki.id }}">view</a>
+      </td>
+      <td class="edit">
+        <a href="/_edit{{ topic.path }}?id={{ wiki.id }}">edit</a>
+      </td>
+    </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
+
+

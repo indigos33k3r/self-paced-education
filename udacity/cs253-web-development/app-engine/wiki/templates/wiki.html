@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% if id %}
+  {% set link_suffix = [topic.path, "?id=", id]|join("") %}
+{% else %}
+  {% set link_suffix = topic.path %}
+{% endif %}
+
+{% block content %}
+
+<header>
+  <a href="/_history{{ link_suffix }}">history</a> |
+  {% if username %}
+    <a href="/_edit{{ link_suffix }}">edit</a> |
+    {{ username }}
+    (<a href="/logout?redirect={{ link_suffix }}">logout</a>)
+  {% else %}
+    <a href="/login?redirect={{ link_suffix }}">login</a> |
+    <a href="/signup?redirect={{ link_suffix }}">signup</a>
+  {% endif %}
+</header>
+
+<h1>{{ topic.wiki_name }}</h1>
+
+{{ content | safe }}
+
+{% endblock %}
+
