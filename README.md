@@ -35,7 +35,6 @@ Below is a list of everything that I have planned / completed. There may be note
 **Udacity**
 
 * Web Development (retaking with better notes and solutions)
-* Programming with Python (OOP)
 * Intro to Data Science
 * R Programming
 * Differential Equations w/ Python
@@ -82,7 +81,19 @@ Below is a list of everything that I have planned / completed. There may be note
         * Hash tables
     * Notable assignments:
         * Web crawler and search engine that ranks pages
-        * Social network
+        * Gaming social network
+* UD 036 - Object Oriented Programming with Python
+	* Summary: A short and nicely-paced introduction to OOP concepts.
+	* Instructor: Kunal Chalwa, Masters student at Stanford University's School of Education
+	* Prerequisites: N/A (some Python experience is helpful)
+	* Topics covered:
+		* Quick refresher on basic programming concepts and Python syntax
+		* Using Python modules
+		* Using 3rd-party modules like Twilio via PyPi
+		* Using and making classes
+	* Notable assignments:
+		* Build a "Movie" class to create an online movies database
+		* Come up with your own final project
 * CS 253 - Web Development
     * Summary: A fast-paced but incredibly well-taught introduction to back-end web development with Python and Google App Engine.
     * Instructor: Steve Huffman, Co-Founder of Reddit and Hipmunk
