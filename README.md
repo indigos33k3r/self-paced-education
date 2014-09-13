@@ -34,7 +34,11 @@ Below is a list of everything that I have planned / completed. There may be note
 
 **Udacity**
 
-* [Intro to Computer Science](#cs101---introduction-to-computer-science)
+* [Intro to Computer Science](#cs-101---introduction-to-computer-science)
+* [Object-Oriented Programming with Python](#ud-036---object-oriented-programming-with-python)
+* [Intro to Hadoop and MapReduce](#ud-617---intro-to-hadoop-and-mapreduce)
+* [Web Development](#cs-253---web-development)
+    * This one will be re-done soon with better notes and solutions!
 
 ###Coming Soon
 
@@ -74,7 +78,7 @@ Below is a list of everything that I have planned / completed. There may be note
 
 **Udacity**
 
-###### CS101 - Introduction to Computer Science
+###### CS 101 - Introduction to Computer Science
     
 * Summary: A great course for beginners and those with a bit of programming experience alike.
 * My rating: 8/10
