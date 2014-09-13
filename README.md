@@ -34,7 +34,7 @@ Below is a list of everything that I have planned / completed. There may be note
 
 **Udacity**
 
-* [Intro to Computer Science](#CS101)
+* [Intro to Computer Science](#cs101---introduction-to-computer-science)
 
 ###Coming Soon
 
