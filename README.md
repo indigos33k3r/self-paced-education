@@ -39,12 +39,11 @@ Below is a list of everything that I have planned / completed. There may be note
 * R Programming
 * Differential Equations w/ Python
 * MongoDB
-* Intro to Hadoop and MapReduce
-* Programming Languages
 
 **Coursera**
 
 * Databases
+* Compilers
 
 **MIT OpenCourseWare**
 
@@ -69,6 +68,7 @@ Below is a list of everything that I have planned / completed. There may be note
 
 * CS 101 - Introduction to Computer Science
     * Summary: A great course for beginners and those with a bit of programming experience alike.
+    * My rating: 8/10
     * Instructor: David Evans, Professor of Computer Science at the University of Virginia
     * Prerequisites: N/A
     * Topics covered:
@@ -84,6 +84,7 @@ Below is a list of everything that I have planned / completed. There may be note
         * Gaming social network
 * UD 036 - Object Oriented Programming with Python
 	* Summary: A short and nicely-paced introduction to OOP concepts.
+    * My rating: 4/10
 	* Instructor: Kunal Chalwa, Masters student at Stanford University's School of Education
 	* Prerequisites: N/A (some Python experience is helpful)
 	* Topics covered:
@@ -96,6 +97,7 @@ Below is a list of everything that I have planned / completed. There may be note
 		* Come up with your own final project
 * CS 253 - Web Development
     * Summary: A fast-paced but incredibly well-taught introduction to back-end web development with Python and Google App Engine.
+    * My rating: 9/10
     * Instructor: Steve Huffman, Co-Founder of Reddit and Hipmunk
     * Prerequisites: Programming experience, preferably with Python
     * Topics covered:
@@ -113,3 +115,17 @@ Below is a list of everything that I have planned / completed. There may be note
     * Notable assignments:
         * A basic blog
         * "Mini" Wikipedia
+* UD 617 - Intro to Hadoop and MapReduce
+    * Summary: A high-level overview of how Hadoop works and an introduciton to writing MapReduce code.
+    * My rating: 3/10
+    * Instructors: Sarah Sprohnele and Ian Wrigley of Cloudera
+    * Prerequisites: Python programming experience
+    * Topics covered:
+        * What "Big Data" is
+        * History of Hadoop
+        * Overview of Hadoop ecosystem
+        * Writing basic MapReduce code
+        * Common MapReduce design patterns
+    * Notable Assignments:
+        * Analyzing server logs
+        * Finding commonly used words on the Udacity forums
