@@ -37,8 +37,6 @@ Below is a list of everything that I have planned / completed. There may be note
 * [Intro to Computer Science](#cs-101---introduction-to-computer-science)
 * [Object-Oriented Programming with Python](#ud-036---object-oriented-programming-with-python)
 * [Intro to Hadoop and MapReduce](#ud-617---intro-to-hadoop-and-mapreduce)
-* [Web Development](#cs-253---web-development)
-    * This one will be re-done soon with better notes and solutions!
 
 ###Coming Soon
 
@@ -46,7 +44,7 @@ Below is a list of everything that I have planned / completed. There may be note
 
 **Udacity**
 
-* Web Development (retaking with better notes and solutions)
+* Web Development
 * Intro to Data Science
 * R Programming
 * Differential Equations w/ Python
@@ -110,28 +108,6 @@ Below is a list of everything that I have planned / completed. There may be note
 * Notable assignments:
     * Build a "Movie" class to create an online movies database
     * Come up with your own final project
-
-###### CS 253 - Web Development
-    
-* Summary: A fast-paced but incredibly well-taught introduction to back-end web development with Python and Google App Engine.
-* My rating: 9/10
-* Instructor: Steve Huffman, Co-Founder of Reddit and Hipmunk
-* Prerequisites: Programming experience, preferably with Python
-* Topics covered:
-    * Getting set up with Google App Engine
-    * HTML and CSS crash course (not the focus of this class)
-    * HTTP requests and responses
-    * APIs: JSON, RSS, and XML
-    * The relationship between the client and the server
-    * Validating forms and input
-    * HTML templates with Jinja
-    * Databases (Google Datastore)
-    * Security: Cookies, Hashing, Salts, Passwords, Rainbow Tables, HTTPS, etc...
-    * Caching with memcached
-    * Scaling your web application
-* Notable assignments:
-    * A basic blog
-    * "Mini" Wikipedia
 
 ###### UD 617 - Intro to Hadoop and MapReduce
     
