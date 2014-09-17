@@ -120,3 +120,58 @@ Here are a few examples of inline and block elements in HTML:
 There are two other tags to mention before we move on:
 
 The HTML `<div>` and `<span>` tags can be considered more "generic" elements than `<p>` or `<b>`. Span is inline, and div is block, but what you need to remember is that they simply wrap their content and can have styles applied to them using CSS. Other elements can as well, but span and div don't do anything by default, which makes them unique.
+
+**HTML Documents**
+
+The last part of HTML we're going to talk about for now involves making a real HTML file! All HTML (assuming we're writing [HTML5](http://en.wikipedia.org/wiki/HTML5)) files start with this line:
+
+    <!doctype html>
+
+This line tells the web broswer what kind of document this is. We then need to fill in the stuff below that, and you'll recognize three new tags being used:
+
+    <!doctype html>
+    <html>
+        <head>
+        
+        </head>
+        <body>
+
+        </body>
+    </html>
+
+Before we fill in some more stuff on our new page, let's take a step back:
+
+1. The `<html>` tag
+    * This tag surrounds the entire document (except for the doctype declaration at the top).
+2. The `<head>` tag
+    * This part of the document includes some metadata and links to JavaScript and CSS files.
+3. The `<body>` tag
+    * This is where the content goes! All of the HTML elements we were learning before would go in here.
+
+Let's fill in the document (be sure to look up any tags that don't make sense to you, as I don't feel a need to explain any more):
+
+    <!doctype html>
+    <html>
+        <head>
+            <title>My Website</title>
+            <meta charset="utf-8">
+            <meta name="description" content="This is what my site's description is.">
+        </head>
+        <body>
+            <div>
+                <p>
+                    This is a paragraph with some <b>bold text</b>!
+                </p>
+            </div>
+        </body>
+    </html>
+
+Save that file as `index.html` and open it in a web browser: that's your first complete HTML document! There's a lot more to HTML, but this course is about back end, not front end, web development, so we don't need to go too much more in-depth into HTML. 
+
+Check out these resources to learn all about HTML5:
+
+* [HTML5Rocks](http://html5rocks.com)
+* [HTML-5-Tutorial](http://html-5-tutorial.com)
+* [Dive into HTML5](http://diveintohtml5.info)
+
+Time to move on to URLs!
