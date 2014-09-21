@@ -12,7 +12,7 @@
 # You and your friend have decided to start a company that hosts a gaming
 # social network site. Your friend will handle the website creation (they know 
 # what they are doing, having taken our web development class). However, it is 
-# up to you to create a data structure that manages the game-network information 
+# up to you to create a data structure that manages the game-network info 
 # and to define several procedures that operate on the network. 
 #
 # In a website, the data is stored in a database. In our case, however, all the 
@@ -29,12 +29,12 @@
 # John is connected to Bryant, Debra, Walter. 
 # John likes to play The Movie: The Game, The Legend of Corgi, Dinosaur Diner.
 #
-# Consider the data structures that we have used in class - lists, dictionaries,
+# Consider the data structures that we have used in class - lists, dictionaries
 # and combinations of the two - (e.g. lists of dictionaries). Pick one which
 # will allow you to manage the data above and implement the procedures below. 
 # 
 # You can assume that <username> is a unique identifier for a user. In other
-# words, there is only one John in the network. Furthermore, connections are not
+# words, there is only one John in the network. Furthermore, connections aren't
 # symmetric - if John is connected with Alice, it does not mean that Alice is
 # connected with John. 
 #
@@ -42,12 +42,12 @@
 # ====================
 # Your task is to complete the procedures according to the specifications below
 # as well as to implement a Make-Your-Own procedure (MYOP). You are encouraged 
-# to define any additional helper procedures that can assist you in accomplishing 
-# a task. You are encouraged to test your code by using print statements and the 
+# to define any additional procedures that can assist you in accomplishing 
+# a task. You are encouraged to test your code by using 'print' and the 
 # Test Run button. 
 # ----------------------------------------------------------------------------- 
 
-example_input="John is connected to Bryant, Debra, Walter.\
+example_input = "John is connected to Bryant, Debra, Walter.\
 John likes to play The Movie: The Game, The Legend of Corgi, Dinosaur Diner.\
 Bryant is connected to Olive, Ollie, Freda, Mercedes.\
 Bryant likes to play City Comptroller: The Fiscal Dilemma, Super Mushroom Man.\
@@ -70,6 +70,7 @@ Robin likes to play Call of Arms, Dwarves and Swords.\
 Freda is connected to Olive, John, Debra.\
 Freda likes to play Starfleet Commander, Ninja Hamsters, Seahorse Adventures."
 
+
 def create_data_structure(string_input):
     """Generate a network of friends and the games they play.
     
@@ -85,7 +86,7 @@ def create_data_structure(string_input):
     
     for i in range(0, len(sentences)-1, 2):
         connections = sentences[i].split(' is connected to ')
-        games = map(str.strip, sentences[i+1].split( ' likes to play ')[1].split(','))
+        games = map(str.strip, sentences[i+1].split(' likes to play ')[1].split(','))
         user = connections[0]
         friends = map(str.strip, connections[1].split(','))
         network[user] = {
@@ -99,7 +100,7 @@ def get_connections(network, user):
     """Get a user's friends.
     
     Keyword arguments:
-    network -- a dictionary containing dictionaries of a user's connections and games
+    network -- a dictionary containing users' connections and games
     user -- the name of a person in the network
     """
     try:
@@ -111,7 +112,7 @@ def get_games_liked(network, user):
     """Get the list of games that a user likes.
     
     Keyword arguments:
-    network -- a dictionary containing dictionaries of a user's connections and games
+    network -- a dictionary containing users' connections and games
     user -- the name of a person in the network
     """
     try:
@@ -123,7 +124,7 @@ def add_connection(network, user_A, user_B):
     """Add a connection between two users in the network.
     
     Keyword arguments:
-    network -- a dictionary containing dictionaries of a user's connections and games
+    network -- a dictionary containing users' connections and games
     user_A -- the name of a person in the network that will be gaining a friend
     user_B -- the name of a person in the network that will be added to the list of freinds
     """
@@ -139,7 +140,7 @@ def add_new_user(network, user, games):
     """Add a user to the network.
     
     Keyword arguments:
-    network -- a dictionary containing dictionaries of a user's connections and games
+    network -- a dictionary containing users' connections and games
     user -- the name of a person that will be added
     games -- the list of games that the new user likes to play
     """
@@ -154,7 +155,7 @@ def get_secondary_connections(network, user):
     """Get the 2nd level of connections of a given user.
     
     Keyword arguments:
-    network -- a dictionary containing dictionaries of a user's connections and games
+    network -- a dictionary containing users' connections and games
     user -- the name of a person in the network
     """
     try:
@@ -166,7 +167,7 @@ def connections_in_common(network, user_A, user_B):
     """Get the shared connections of two users.
     
     Keyword arguments:
-    network -- a dictionary containing dictionaries of a user's connections and games
+    network -- a dictionary containing users' connections and games
     user_A -- the name of a person in the network
     user_B -- the name of a person in the network
     """
@@ -179,7 +180,7 @@ def path_to_friend(network, start, end, path=None):
     """Get a possible path from one user to another, based on their connections.
     
     Keyword arguments:
-    network -- a dictionary containing dictionaries of a user's connections and games
+    network -- a dictionary containing users' connections and games
     start -- the name of a person in the network
     end -- the name of a person in the network
     path -- history (default = [])
@@ -209,7 +210,7 @@ def top_games(network):
     """Get the top 5 most liked games among users in the network.
     
     Keyword arguments:
-    network -- a dictionary containing dictionaries of a user's connections and games
+    network -- a dictionary containing users' connections and games
     """
     top_games, games = [], []
     for user in network:
@@ -229,8 +230,8 @@ print get_connections(net, "Debra1")
 print get_connections(add_new_user(net, "Bob", []), "Bob")
 print get_connections(net, "Debra")
 print path_to_friend(net, 'John', 'Ollie')
-print add_new_user(net, "Debra", []) 
-print add_new_user(net, "Nick", ["Seven Schemers", "The Movie: The Game"]) # True
+print add_new_user(net, "Debra", [])
+print add_new_user(net, "Nick", ["Seven Schemers", "The Movie: The Game"])
 print get_connections(net, "Mercedes")
 print get_connections(net, "John")
 print get_connections(net, "Robin")

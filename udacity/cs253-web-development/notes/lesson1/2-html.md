@@ -117,9 +117,9 @@ Here are a few examples of inline and block elements in HTML:
     * `<div>`
     * `<table>`
 
-There are two other tags to mention before we move on:
+There are two other tags to mention before we move on: `div` and `span`.
 
-The HTML `<div>` and `<span>` tags can be considered more "generic" elements than `<p>` or `<b>`. Span is inline, and div is block, but what you need to remember is that they simply wrap their content and can have styles applied to them using CSS. Other elements can as well, but span and div don't do anything by default, which makes them unique.
+The HTML `<div>` and `<span>` tags can be considered more "generic" elements than something like `<p>` or `<b>`. Span is inline, and div is block, but what you need to remember is that they simply wrap their content and can have styles applied to them using CSS. Other elements can as well, but span and div don't do anything by default, which makes them unique.
 
 **HTML Documents**
 
@@ -132,7 +132,7 @@ This line tells the web broswer what kind of document this is. We then need to f
     <!doctype html>
     <html>
         <head>
-        
+ 
         </head>
         <body>
 
@@ -166,7 +166,7 @@ Let's fill in the document (be sure to look up any tags that don't make sense to
         </body>
     </html>
 
-Save that file as `index.html` and open it in a web browser: that's your first complete HTML document! There's a lot more to HTML, but this course is about back end, not front end, web development, so we don't need to go too much more in-depth into HTML. 
+Save that file as `index.html` and open it in a web browser: that's your first complete HTML document! There's a lot more to HTML, but this course is about back end, not front end, web development, so we don't need to go too much more in-depth into HTML.
 
 Check out these resources to learn all about HTML5:
 

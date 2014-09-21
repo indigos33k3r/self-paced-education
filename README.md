@@ -1,4 +1,4 @@
-#Courses
+# Courses
 
 **Notes and solutions from various courses**
 
@@ -6,7 +6,7 @@
 
 ---
 
-###Background
+### Background
 
 There are tons of great, free, and online courses out there. In fact, there are so many that I will never be able to enjoy taking all of them. That's what inspired me to create this repository of course notes and solutions; while simple notes will never be a full replacement for a course experience, they can at least be a substitute that take much less time to go through.
 
@@ -22,13 +22,13 @@ I will also mention that my notes are not always an exact representation of what
 
 Enjoy!
 
-###Topics Covered
+### Topics Covered
 
 The focus will be on computer science, math, and engineering-related courses, but I have other interests as well, like music and history.
 
 Below is a list of everything that I have planned / completed. There may be notes and solutions that are present in the repository but are still incomplete, so read this list to see what I feel is "production-ready".
 
-###Current Courses
+### Current Courses
 
 ---
 
@@ -38,13 +38,18 @@ Below is a list of everything that I have planned / completed. There may be note
 * [Object-Oriented Programming with Python](#ud-036---object-oriented-programming-with-python)
 * [Intro to Hadoop and MapReduce](#ud-617---intro-to-hadoop-and-mapreduce)
 
-###Coming Soon
+### In progress
+
+**Udacity**
+
+* Web Development 
+
+### Coming soon
 
 ---
 
 **Udacity**
 
-* Web Development
 * Intro to Data Science
 * R Programming
 * Differential Equations w/ Python
@@ -70,7 +75,7 @@ Below is a list of everything that I have planned / completed. There may be note
 * Algebra
 * Trigonometry
 
-###Current Notes and Solutions
+### Current Notes and Solutions
 
 ---
 
