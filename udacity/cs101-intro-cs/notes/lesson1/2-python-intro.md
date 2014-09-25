@@ -1,10 +1,10 @@
-#Intro to Computer Science
+# Intro to Computer Science
 
 **Udacity: CS 101**
 
 ---
 
-###Getting Started with Python
+### Getting Started with Python
 
 Note that we use Python 2 in this class, not Python 3. For more on why Python 2 is still more popular than the newer version, [see this document](http://blog.startifact.com/posts/python-2-gravity.html).
 

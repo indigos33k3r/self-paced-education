@@ -43,6 +43,10 @@ Below is a list of everything that I have planned / completed. There may be note
 **Udacity**
 
 * Web Development 
+* HTML & CSS
+* JavaScript Basics
+* Git and GitHub
+* Object-Oriented JavaScript
 
 ### Coming soon
 
@@ -54,6 +58,7 @@ Below is a list of everything that I have planned / completed. There may be note
 * R Programming
 * Differential Equations w/ Python
 * MongoDB
+* Website Performance Optimization
 
 **Coursera**
 
@@ -69,11 +74,6 @@ Below is a list of everything that I have planned / completed. There may be note
 **edX**
 
 * Functional Programming
-
-**Khan Academy**
-
-* Algebra
-* Trigonometry
 
 ### Current Notes and Solutions
 
