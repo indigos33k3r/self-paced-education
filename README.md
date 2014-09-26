@@ -37,14 +37,16 @@ Below is a list of everything that I have planned / completed. There may be note
 * [Intro to Computer Science](#cs-101---introduction-to-computer-science)
 * [Object-Oriented Programming with Python](#ud-036---object-oriented-programming-with-python)
 * [Intro to Hadoop and MapReduce](#ud-617---intro-to-hadoop-and-mapreduce)
+* [JavaScript Basics](#ud-804---javascript-basics)
 
 ### In progress
+
+---
 
 **Udacity**
 
 * Web Development 
 * HTML & CSS
-* JavaScript Basics
 * Git and GitHub
 * Object-Oriented JavaScript
 
@@ -83,8 +85,7 @@ Below is a list of everything that I have planned / completed. There may be note
 
 ###### CS 101 - Introduction to Computer Science
     
-* Summary: A great course for beginners and those with a bit of programming experience alike.
-* My rating: 8/10
+* Summary: A great CS course for beginners and those with a bit of programming experience alike.
 * Instructor: David Evans, Professor of Computer Science at the University of Virginia
 * Prerequisites: N/A
 * Topics covered:
@@ -102,7 +103,6 @@ Below is a list of everything that I have planned / completed. There may be note
 ###### UD 036 - Object Oriented Programming with Python
 
 * Summary: A short and nicely-paced introduction to OOP concepts.
-* My rating: 4/10
 * Instructor: Kunal Chalwa, Masters student at Stanford University's School of Education
 * Prerequisites: N/A (some Python experience is helpful)
 * Topics covered:
@@ -117,7 +117,6 @@ Below is a list of everything that I have planned / completed. There may be note
 ###### UD 617 - Intro to Hadoop and MapReduce
     
 * Summary: A high-level overview of how Hadoop works and an introduciton to writing MapReduce code.
-* My rating: 3/10
 * Instructors: Sarah Sprohnele and Ian Wrigley of Cloudera
 * Prerequisites: Python programming experience
 * Topics covered:
@@ -126,6 +125,22 @@ Below is a list of everything that I have planned / completed. There may be note
     * Overview of Hadoop ecosystem
     * Writing basic MapReduce code
     * Common MapReduce design patterns
-* Notable Assignments:
+* Notable assignments:
     * Analyzing server logs
     * Finding commonly used words on the Udacity forums
+    
+##### UD 804 - JavaScript Basics
+
+* Summary: A breif introduction to JavaScript in the context of DOM manipulation.
+* Instructors: Cameron Pittman and James Willias of Udacity
+* Prerequisites: Basic knowledge of HTML and CSS
+* Topics covered:
+    * Data types: strings, arrays, numbers
+    * Variables
+    * Objects & JSON
+    * A little bit of jQuery
+    * Conditions and if statements
+    * Loops: while, for, for-in
+    * Functions
+* Notable assignments:
+    * Building a résumé

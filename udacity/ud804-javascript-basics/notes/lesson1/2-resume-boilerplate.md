@@ -25,7 +25,7 @@ Udacity has already provided some code to get you started; let's go over it. Her
 
 If you aren't familiar with HTML, check out my notes from Udacity's Web Development class [here](https://github.com/tylucaskelley/courses/blob/master/udacity/cs253-web-development/notes/lesson1/2-html.md). That should tell you all you need to know about how HTML works.
 
-Anyway, the HTML of our résumé, which is located in the `code/lesson1/js-resume` directory, looks like this (with comments removed):
+Anyway, the HTML of our résumé, which is located in the your `index.html` file where you downloaded the project, looks like this (with comments removed):
 
     <!DOCTYPE html>
     <html>
@@ -101,7 +101,7 @@ Anyway, the HTML of our résumé, which is located in the `code/lesson1/js-resum
     
 ### CSS
 
-The project has some pre-defined stylesheets as well; if you're unfamiliar with CSS, check out CSS tutorials [here](http://docs.webplatform.org/wiki/css). Here's an example from `code/lesson1/js-resume/css/style.css`:
+The project has some pre-defined stylesheets as well; if you're unfamiliar with CSS, check out CSS tutorials [here](http://docs.webplatform.org/wiki/css). Here's an example from `style.css`:
 
     .date-text {
         font-style: italic;
@@ -129,4 +129,3 @@ There's also `helper.js `, which is some code that Udacity has pre-written for u
     }
     
 These statements just check for the existence of some elements on the page, and hide certain `div` elements if needed. And finally, we load the file that we will be working in, `resumeBuilder.js`.
-
