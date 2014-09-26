@@ -130,7 +130,7 @@ Below is a list of everything that I have planned / completed. There may be note
     * Analyzing server logs
     * Finding commonly used words on the Udacity forums
     
-##### UD 804 - JavaScript Basics
+###### UD 804 - JavaScript Basics
 
 * Summary: A breif introduction to JavaScript in the context of DOM manipulation.
 * Instructors: Cameron Pittman and James Willias of Udacity
