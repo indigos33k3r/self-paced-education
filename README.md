@@ -49,6 +49,7 @@ Below is a list of everything that I have planned / completed. There may be note
 * HTML & CSS
 * Git and GitHub
 * Object-Oriented JavaScript
+* Intro to Algorithms
 
 ### Coming soon
 
@@ -75,7 +76,7 @@ Below is a list of everything that I have planned / completed. There may be note
 
 **edX**
 
-* Functional Programming
+* Functional Programming with Haskell
 
 ### Current Notes and Solutions
 
