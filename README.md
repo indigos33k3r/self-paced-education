@@ -38,6 +38,7 @@ Below is a list of everything that I have planned / completed. There may be note
 * [Object-Oriented Programming with Python](#ud-036---object-oriented-programming-with-python)
 * [Intro to Hadoop and MapReduce](#ud-617---intro-to-hadoop-and-mapreduce)
 * [JavaScript Basics](#ud-804---javascript-basics)
+* [Version Control](#ud-775---version-control)
 
 ### In progress
 
@@ -47,7 +48,6 @@ Below is a list of everything that I have planned / completed. There may be note
 
 * Web Development 
 * HTML & CSS
-* Git and GitHub
 * Object-Oriented JavaScript
 * Intro to Algorithms
 
@@ -145,3 +145,19 @@ Below is a list of everything that I have planned / completed. There may be note
     * Functions
 * Notable assignments:
     * Building a résumé
+    
+###### UD 775 - Version Control
+
+* Summary: A nice introduction to using Git and GitHub for your projects.
+* Instructors: Caroline and Sarah of Udacity
+* Prerequisites: Ability to read source code, basic command line knowledge
+* Topics covered:
+    * History of Git & why version control helps
+    * Using Git at the command line
+    * Git commands: diff, log, checkout
+    * Cloning and creating repositories
+    * Committing changes and reverting
+    * Branching and merging
+    * Merge conflicts and other problems
+* Notable assignments:
+    * N/A
