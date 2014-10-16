@@ -47,7 +47,6 @@ Below is a list of everything that I have planned / completed. There may be note
 **Udacity**
 
 * Web Development 
-* HTML & CSS
 * Object-Oriented JavaScript
 * Intro to Algorithms
 
