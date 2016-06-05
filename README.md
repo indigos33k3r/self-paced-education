@@ -1,194 +1,190 @@
 # Courses
 
-*Notes and solutions from various online courses*
-
-by Ty-Lucas Kelley
+Aggregates course data from education providers into an API
 
 ---
 
-### Background
+A group of friends and I used to use a spreadsheet to aggregate and share free
+online courses with each other in the early days of college; I decided to turn
+that spreadsheet into a public API for getting information about those courses.
 
-There are tons of great, free, and online courses out there.
-In fact, there are so many that I will never be able to enjoy taking all of them.
-That's what inspired me to create this repository of course notes and solutions;
-while simple notes will never be a full replacement for a course experience,
-they can at least be a substitute that take much less time to go through.
+### Usage
 
-I write very detailed notes and solutions for every class I take.
-I'm sharing them here with the hopes that others will:
+The API is accessed over HTTP, and is not authenticated. All requests use the
+`GET` method, and the current rate limit is **100 requests per hour**.
 
-1. Benefit from them and share them with others.
-2. Be inspired to share their own notes and solutions.
-3. Offer feedback and criticism, so I can improve my note-taking.
+See the "Methods" section below for specific information about each API endpoint.
+Example API call:
 
-Despite this being public and on GitHub, I will not accept any pull requests.
-This is meant to be a repository of my notes and solutions, not a
-community-driven effort. I would encourage those who wish to contribute to
-create and share their own notes and solutions.
-
-I will also mention that my notes are not always an exact
-representation of what was taught in the class. I sometimes remove what I feel
-is unnecessary and add what I feel is supplementary or helpful.
-
-Enjoy!
-
-### Folder structure
-
-Everything is organized like this:
-
-```
-/topicA
-    /providerA
-        /courseA
-        /courseB
-/topicB
-    /providerA
-        /courseA
-    /providerB
-        /courseB
+```txt
+GET https://selfpaced.education/api/v1/search?q=calculus&subject=03495348
 ```
 
-An example would be topic (Computer Science) -> provider (Udacity) -> course (CS 101)
+### Objects
 
-### Topics covered
+**Provider**
 
-The focus will be on computer science, math, and engineering courses,
-but I have other interests as well, like music and history.
+A provider is the institution teaching a course.
 
-Below is a list of every course that is either done, in progress, or being taken
-soon.
+| Key  | Type   |
+| ---- | ------ |
+| id   | int    |
+| name | string |
+| url  | string |
 
-### Current courses
+**Course**
 
----
+A course object provides metadata that describes an online class.
 
-**Computer Science**
+| Key         | Type           |
+| ----------- | -------------- |
+| id          | int            |
+| name        | string         |
+| description | string         |
+| instructor  | string         |
+| source      | string         |
+| url         | string         |
+| subject     | array[Subject] |
+| tags        | array[Tag]     |
 
-* Udacity
-    * [CS 101: Intro to Computer Science](#cs-101---introduction-to-computer-science)
+**Subject**
 
-**Software Development**
+The subject is the general category of a course.
 
-* Udacity
-    * [UD 036: OOP with Python](#ud-036---object-oriented-programming-with-python)
-    * [UD 617: Intro to Hadoop and MapReduce](#ud-617---intro-to-hadoop-and-mapreduce)
-    * [UD 775: Version Control](#ud-775---version-control)
-    * [UD 804: JavaScript Basics](#ud-804---javascript-basics)
+| Key         | Type           |
+| ----------- | -------------- |
+| id          | int            |
+| name        | string         |
+| tags        | array[Tag]     |
 
-### In progress
+**Tag**
 
----
+Tags are used to give additional information about the topics a course covers.
 
-**Computer Science**
+| Key  | Type   |
+| ---- | ------ |
+| id   | int    |
+| name | string |
 
-* Udacity
-    * CS 215: Intro to Algorithms
+### Methods
 
-**Software Development**
+The base URL is https://selfpaced.education. All methods are called via a GET
+request.
 
-* Udacity
-    * CS 253: Web Development
-    * UD 015: OOP with JavaScript
+**Search for a course**
 
-### Coming soon
+`GET /api/v1/search`
 
----
+Search for courses that match your query. Can provide both a search
+term as well as the names of providers, subjects, and tags for further qualification.
 
-**Computer Science**
+Query Parameters
 
-* Udacity
-    * Advanced Operating Systems
-    * Intro to Data Science
-    * Intro to Theoretical Computer Science
-    * AI for Robotics
-    * Intro to Machine Learning
-* Coursera
-    * Intro to Recommender Systems
-    * Compilers
-    * Cryptography I
-    * Cryptography II
-    * Programming Languages
-* Stanford
-    * Statistical Learning
+| Key      | Type          |
+| -------- | ------------- |
+| q        | string        |
+| provider | string        |
+| subject  | string        |
+| tags     | array[string] |
 
-### Notes and solutions
+Returns an array of `Course` objects.
 
----
+**List all courses**
 
-###### CS 101 - Introduction to Computer Science
+`GET /api/v1/courses`
 
-* Summary: A great CS course for beginners and those with a bit of programming experience alike.
-* Instructor: David Evans, Professor of Computer Science at the University of Virginia
-* Prerequisites: N/A
-* Topics covered:
-    * Basic Python programming (arithmetic, strings, lists, dictionaries, procedures, loops, etc.)
-    * Problem solving / thinking like a computer scientist
-    * Formal grammars / Backus-Naur form
-    * Brief introduction to how computers and networks function
-    * Recursion
-    * A bit of algorithm analysis / cost
-    * Hash tables
-* Notable assignments:
-    * Web crawler and search engine that ranks pages
-    * Gaming social network
+List all course information, and optionally takes parameters for the subject,
+provider, and tags.
 
-###### UD 036 - Object Oriented Programming with Python
+Query Parameters
 
-* Summary: A short and nicely-paced introduction to OOP concepts.
-* Instructor: Kunal Chalwa, Masters student at Stanford University's School of Education
-* Prerequisites: N/A (some Python experience is helpful)
-* Topics covered:
-    * Quick refresher on basic programming concepts and Python syntax
-    * Using Python modules
-    * Using 3rd-party modules like Twilio via PyPi
-    * Using and making classes
-* Notable assignments:
-    * Build a "Movie" class to create an online movies database
-    * Come up with your own final project
+| Key      | Type          |
+| -------- | ------------- |
+| provider | string        |
+| subject  | string        |
+| tags     | array[string] |
 
-###### UD 617 - Intro to Hadoop and MapReduce
+Returns an array of `Course` objects.
 
-* Summary: A high-level overview of how Hadoop works and an introduction to writing MapReduce code.
-* Instructors: Sarah Sprohnele and Ian Wrigley of Cloudera
-* Prerequisites: Python programming experience
-* Topics covered:
-    * What "Big Data" is
-    * History of Hadoop
-    * Overview of Hadoop ecosystem
-    * Writing basic MapReduce code
-    * Common MapReduce design patterns
-* Notable assignments:
-    * Analyzing server logs
-    * Finding commonly used words on the Udacity forums
+**Show course info**
 
-###### UD 804 - JavaScript Basics
+`GET /api/v1/courses/:id`
 
-* Summary: A brief introduction to JavaScript in the context of DOM manipulation.
-* Instructors: Cameron Pittman and James Williams of Udacity
-* Prerequisites: Basic knowledge of HTML and CSS
-* Topics covered:
-    * Data types: strings, arrays, numbers
-    * Variables
-    * Objects & JSON
-    * A little bit of jQuery
-    * Conditions and if statements
-    * Loops: while, for, for-in
-    * Functions
-* Notable assignments:
-    * Building a resume
+Get metadata for a specific course.
 
-###### UD 775 - Version Control
+Returns a `Course` object.
 
-* Summary: A nice introduction to using Git and GitHub for your projects.
-* Instructors: Caroline and Sarah of Udacity
-* Prerequisites: Ability to read source code, basic command line knowledge
-* Topics covered:
-    * History of Git & why version control helps
-    * Using Git at the command line
-    * Git commands: diff, log, checkout
-    * Cloning and creating repositories
-    * Committing changes and reverting
-    * Branching and merging
-    * Merge conflicts and other problems
-* Notable assignments:
-    * N/A
+**List all providers**
+
+`GET /api/v1/providers`
+
+List all provider information.
+
+Returns an array of `Provider` objects.
+
+**Show provider info**
+
+`GET /api/v1/providers/:id`
+
+Get metadata for a specific provider.
+
+Returns a `Provider` object.
+
+**List all subjects**
+
+`GET /api/v1/subjects`
+
+List all subject information.
+
+Returns an array of `Subject` objects.
+
+**Show subject info**
+
+`GET /api/v1/subjects/:id`
+
+Get metadata for a specific subject.
+
+Returns a `Subject` object.
+
+**List all tags**
+
+`GET /api/v1/tags`
+
+List all tag information.
+
+Returns an array of `Tag` objects.
+
+**Show tag info**
+
+`GET /api/v1/tags/:id`
+
+Get metadata for a specific tag.
+
+Returns a `Tag` object.
+
+### Sources
+
+Here is the current list of education providers the course data is sourced from:
+
+* [Coursera](https://building.coursera.org/app-platform/catalog/)
+* [edX](http://edx.readthedocs.io/projects/edx-platform-api/en/latest/courses/overview.html)
+* [Khan Academy](http://api-explorer.khanacademy.org)
+* [Open Courseware](http://data.oeconsortium.org)
+* [Udacity](https://www.udacity.com/catalog-api)
+* [YouTube](https://developers.google.com/youtube/v3/)
+
+### Contributing
+
+I recommend [filing a bug](https://github.com/tylucaskelley/courses/issues/new) if you:
+
+* Find an issue with the API
+* Want to add another education provider
+* Would like to request a feature
+
+If you'd like to contribute, please see this document. I appreciate all pull
+requests!
+
+### Credits
+
+To [@lawrencewilmore](https://github.com/lawrencewilmore), thank you for creating
+the original spreadsheet of free courses.
