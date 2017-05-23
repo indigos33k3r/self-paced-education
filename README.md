@@ -1,6 +1,6 @@
 # Courses
 
-Aggregates course data from education providers into an API
+Aggregates course data from education providers into a simple API.
 
 ---
 
@@ -8,13 +8,15 @@ A group of friends and I used to use a spreadsheet to aggregate and share free
 online courses with each other in the early days of college; I decided to turn
 that spreadsheet into a public API for getting information about those courses.
 
-### Usage
+### Creating an Account
 
-The API is accessed over HTTP, and is not authenticated. All requests use the
-`GET` method, and the current rate limit is **100 requests per hour**.
+To create an account, simply visit 
 
-See the "Methods" section below for specific information about each API endpoint.
-Example API call:
+### Authentication & Usage
+
+The API is accessed over HTTPS, and authentication is handled via API keys.
+
+To get an API key, 
 
 ```txt
 GET https://selfpaced.education/api/v1/search?q=calculus&subject=03495348
@@ -71,7 +73,7 @@ Tags are used to give additional information about the topics a course covers.
 The base URL is https://selfpaced.education. All methods are called via a GET
 request.
 
-**Search for a course**
+*****Search forja course**
 
 `GET /api/v1/search`
 
@@ -178,7 +180,7 @@ Here is the current list of education providers the course data is sourced from:
 I recommend [filing a bug](https://github.com/tylucaskelley/courses/issues/new) if you:
 
 * Find an issue with the API
-* Want to add another education provider
+* Want to add another education provider's set of courses
 * Would like to request a feature
 
 If you'd like to contribute, please see this document. I appreciate all pull
